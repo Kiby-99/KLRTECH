@@ -81,7 +81,7 @@ nav a:hover{
     width:100%;
     height:100vh;
 
-    background-image:url("Cover2.jpg");   /* Change to your image */
+    background-image:url("Cover2.png");   /* Change to your image */
 
     background-size:cover;
     background-position:center;
