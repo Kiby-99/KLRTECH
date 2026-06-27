@@ -550,7 +550,7 @@ nav a.active::after{
 .services-hero{
     height:100vh;
     width:100%;
-    background:url("services-bg.png") center center/cover no-repeat;
+    background:url("Coverservices.png") center center/cover no-repeat;
     position:relative;
     display:flex;
     align-items:center;
