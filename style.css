@@ -1,3 +1,4 @@
+/* RESET */
 *{
     margin:0;
     padding:0;
@@ -11,6 +12,7 @@ body{
     overflow-x:hidden;
 }
 
+/* HEADER */
 header{
     width:100%;
     padding:25px 8%;
@@ -48,6 +50,7 @@ nav a:hover{
     color:#ff6b00;
 }
 
+/* HERO SECTION */
 .hero{
     height: 100vh;
     width: 100%;
@@ -58,7 +61,6 @@ nav a:hover{
     padding: 0 8%;
 }
 
-/* gelapkan sikit background supaya text clear */
 .overlay{
     position: absolute;
     top: 0;
@@ -101,13 +103,13 @@ h1{
     font-weight: bold;
     border-radius: 5px;
 }
+
 .gold{
     color:#D4AF37 !important;
 }
 
 /* ABOUT SECTION */
-#about {
-    #about {
+#about{
     min-height: 100vh;
     width: 100%;
 
@@ -116,14 +118,16 @@ h1{
 
     padding: 100px 8%;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
-#about h2 {
+#about h2{
     font-size: 40px;
     margin-bottom: 20px;
 }
 
-#about p {
+#about p{
     font-size: 18px;
     line-height: 1.6;
     max-width: 700px;
