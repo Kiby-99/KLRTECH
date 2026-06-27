@@ -104,3 +104,31 @@ h1{
 .gold{
     color:#D4AF37 !important;
 }
+
+/* ABOUT SECTION */
+#about {
+    min-height: 100vh;
+    width: 100%;
+
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url("Cover2.png") no-repeat center center/cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 80px 8%;
+    color: white;
+}
+
+#about h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    opacity: 0.9;
+}
