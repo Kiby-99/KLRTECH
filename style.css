@@ -29,7 +29,7 @@ header{
 }
 
 .logo span{
-    color:#ff6b00;
+    color:#D4AF37;
 }
 
 nav{
@@ -100,4 +100,9 @@ h1{
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+}
+
+/* Gold text */
+.gold{
+    color:#D4AF37;
 }
