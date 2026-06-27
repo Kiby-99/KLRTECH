@@ -101,8 +101,6 @@ h1{
     font-weight: bold;
     border-radius: 5px;
 }
-
-/* Gold text */
 .gold{
-    color:#D4AF37;
+    color:#D4AF37 !important;
 }
