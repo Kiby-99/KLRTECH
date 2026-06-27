@@ -542,6 +542,142 @@ nav a.active::after{
     flex-wrap:wrap;
     justify-content:center;
 }
+    
+/* ==========================================
+   SERVICES PAGE
+========================================== */
 
+.services-hero{
+    height:100vh;
+    width:100%;
+    background:url("services-bg.png") center center/cover no-repeat;
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+
+.services-hero .overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+}
+
+.services-content{
+    position:relative;
+    z-index:2;
+    width:900px;
+    margin-left:4%;
+    color:#fff;
+}
+
+.services-content .small-title{
+    color:#D4AF37;
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.services-content h1{
+    font-size:72px;
+    font-weight:800;
+    color:#fff;
+    margin-top:15px;
+    line-height:1;
+}
+
+.gold-line{
+    width:240px;
+    height:2px;
+    background:#D4AF37;
+    margin:35px 0;
+}
+
+.services-content p{
+    font-size:18px;
+    line-height:1.8;
+    color:#ddd;
+    max-width:650px;
+    margin-bottom:40px;
+}
+
+/* Cards */
+
+.service-cards{
+    display:flex;
+    gap:25px;
+}
+
+.service-card{
+    width:270px;
+    min-height:340px;
+    padding:35px;
+    border:1px solid rgba(255,255,255,.12);
+    background:rgba(255,255,255,.03);
+    backdrop-filter:blur(6px);
+    border-radius:18px;
+}
+
+.service-card h3{
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:15px;
+    color:#fff;
+}
+
+.card-line{
+    width:45px;
+    height:2px;
+    background:#D4AF37;
+    margin-bottom:25px;
+}
+
+.service-card ul{
+    list-style:none;
+}
+
+.service-card ul li{
+    position:relative;
+    padding-left:22px;
+    margin-bottom:18px;
+    color:#e4e4e4;
+    font-size:16px;
+}
+
+.service-card ul li::before{
+    content:"▸";
+    position:absolute;
+    left:0;
+    color:#D4AF37;
+}
+
+/* Responsive */
+
+@media(max-width:1200px){
+
+    .service-cards{
+        flex-wrap:wrap;
+    }
+
+    .services-content{
+        width:95%;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .services-content h1{
+        font-size:48px;
+    }
+
+    .service-cards{
+        flex-direction:column;
+    }
+
+    .service-card{
+        width:100%;
+    }
+
+}
 }
 }
