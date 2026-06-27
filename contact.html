@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | KLRTECH</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        KLR<span class="gold">TECH</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
+
+<section class="contact-page">
+
+    <div class="overlay"></div>
+
+    <div class="contact-container">
+
+        <!-- LEFT CONTENT -->
+
+        <div class="contact-left">
+
+            <span class="small-title">
+                CONTACT US
+            </span>
+
+            <h1>
+                CONTACT US
+            </h1>
+
+            <div class="gold-line"></div>
+
+            <p>
+                Feel free to contact us referring on your interest!
+            </p>
+
+            <img src="contact-illustration.png" alt="Contact Illustration">
+
+        </div>
+
+        <!-- RIGHT FORM -->
+
+        <div class="contact-right">
+
+            <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+
+                <input type="hidden" name="_captcha" value="false">
+
+                <label>
+                    Name <span>*</span>
+                </label>
+
+                <input
+                    type="text"
+                    name="Name"
+                    placeholder="Name"
+                    required>
+
+                <label>
+                    Email <span>*</span>
+                </label>
+
+                <input
+                    type="email"
+                    name="Email"
+                    placeholder="Email"
+                    required>
+
+                <label>
+                    Contact <span>*</span>
+                </label>
+
+                <input
+                    type="tel"
+                    name="Contact"
+                    placeholder="Contact Number"
+                    required>
+
+                <label>
+                    Message <span>*</span>
+                </label>
+
+                <textarea
+                    name="Message"
+                    placeholder="Message"
+                    required></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
