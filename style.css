@@ -495,13 +495,7 @@ nav a.active::after{
     font-size:54px;
 
 }
-/* ==========================
-   FOOTER
-========================== */
-
-/* ==========================
-   FOOTER
-========================== */
+/* GLOBAL FOOTER */
 
 .footer{
     width:100%;
@@ -534,24 +528,18 @@ nav a.active::after{
 }
 
 @media(max-width:768px){
-
     .footer{
         flex-direction:column;
-        gap:15px;
         text-align:center;
+        gap:15px;
     }
 
     .footer-right{
-        flex-wrap:wrap;
         justify-content:center;
+        flex-wrap:wrap;
     }
-
 }
     
-/* ==========================================
-   SERVICES PAGE
-========================================== */
-
 /* ==========================================
    SERVICES PAGE
 ========================================== */
@@ -682,4 +670,4 @@ nav a.active::after{
         width:100%;
     }
 
-}
+}}
