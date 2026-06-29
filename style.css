@@ -499,16 +499,23 @@ nav a.active::after{
    FOOTER
 ========================== */
 
+/* ==========================
+   FOOTER
+========================== */
+
 .footer{
     width:100%;
-    height:80px;
     background:#232323;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:0 8%;
+    padding:30px 8%;
     color:#8a8a8a;
     font-size:14px;
+}
+
+.footer-left{
+    color:#8a8a8a;
 }
 
 .footer-right{
@@ -519,24 +526,43 @@ nav a.active::after{
 .footer-right a{
     color:#8a8a8a;
     text-decoration:none;
+    transition:.3s;
 }
 
 .footer-right a:hover{
     color:#D4AF37;
+}
+
+@media(max-width:768px){
+
+    .footer{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    .footer-right{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
 }
     
 /* ==========================================
    SERVICES PAGE
 ========================================== */
 
+/* ==========================================
+   SERVICES PAGE
+========================================== */
+
 .services-hero{
     width:100%;
-    height:100vh;
+    min-height:100vh;
     background:url("Coverservices.png") center center/cover no-repeat;
     position:relative;
     display:flex;
     align-items:center;
-
 }
 
 .services-hero .overlay{
@@ -548,8 +574,9 @@ nav a.active::after{
 .services-content{
     position:relative;
     z-index:2;
-    width:900px;
-    margin-left:4%;
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
     color:#fff;
 }
 
@@ -568,6 +595,14 @@ nav a.active::after{
     line-height:1;
 }
 
+.services-content p{
+    font-size:18px;
+    line-height:1.8;
+    color:#ddd;
+    max-width:700px;
+    margin-bottom:50px;
+}
+
 .gold-line{
     width:240px;
     height:2px;
@@ -575,40 +610,32 @@ nav a.active::after{
     margin:35px 0;
 }
 
-.services-content p{
-    font-size:18px;
-    line-height:1.8;
-    color:#ddd;
-    max-width:650px;
-    margin-bottom:40px;
-}
-
-/* Cards */
+/* Service Cards */
 
 .service-cards{
     display:flex;
-    gap:25px;
+    gap:30px;
+    flex-wrap:wrap;
 }
 
 .service-card{
-    width:270px;
-    min-height:340px;
+    width:300px;
+    min-height:320px;
     padding:35px;
-    border:1px solid rgba(255,255,255,.12);
-    background:rgba(255,255,255,.03);
-    backdrop-filter:blur(6px);
-    border-radius:18px;
+    border:1px solid rgba(255,255,255,.15);
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
 }
 
 .service-card h3{
     font-size:24px;
-    font-weight:700;
-    margin-bottom:15px;
     color:#fff;
+    margin-bottom:15px;
 }
 
 .card-line{
-    width:45px;
+    width:50px;
     height:2px;
     background:#D4AF37;
     margin-bottom:25px;
@@ -621,8 +648,8 @@ nav a.active::after{
 .service-card ul li{
     position:relative;
     padding-left:22px;
-    margin-bottom:18px;
-    color:#e4e4e4;
+    margin-bottom:16px;
+    color:#ddd;
     font-size:16px;
 }
 
@@ -633,16 +660,14 @@ nav a.active::after{
     color:#D4AF37;
 }
 
-/* Responsive */
+@media(max-width:991px){
 
-@media(max-width:1200px){
-
-    .service-cards{
-        flex-wrap:wrap;
+    .services-content h1{
+        font-size:56px;
     }
 
-    .services-content{
-        width:95%;
+    .service-cards{
+        justify-content:center;
     }
 
 }
@@ -650,17 +675,11 @@ nav a.active::after{
 @media(max-width:768px){
 
     .services-content h1{
-        font-size:48px;
-    }
-
-    .service-cards{
-        flex-direction:column;
+        font-size:42px;
     }
 
     .service-card{
         width:100%;
     }
 
-}
-}
 }
