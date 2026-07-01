@@ -52,60 +52,96 @@ nav a:hover{
 
 /* HERO SECTION */
 .hero{
-    height: 100vh;
-    width: 100%;
-    background: url("Cover1.jpg") no-repeat center center/cover;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 0 8%;
+    min-height:100vh;
+    width:100%;
+    background-image:url("Cover1.jpg");
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    position:relative;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+    overflow:hidden;
 }
 
 .overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0,0,0,0.4);
-    z-index: 1;
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        90deg,
+        rgba(0,0,0,0.75) 0%,
+        rgba(0,0,0,0.45) 45%,
+        rgba(0,0,0,0.15) 100%
+    );
+    z-index:1;
 }
 
 .content{
-    position: relative;
-    z-index: 2;
-    color: white;
-    max-width: 600px;
+    position:relative;
+    z-index:2;
+    color:#fff;
+    max-width:700px;
 }
 
 .small{
-    letter-spacing: 2px;
+    color:#D4AF37;
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:4px;
+    margin-bottom:20px;
 }
 
-h1{
-    font-size: 48px;
-    line-height: 1.2;
+.content h1{
+    font-size:78px;
+    line-height:1.05;
+    font-weight:800;
+    margin-bottom:25px;
+    color:#fff;
 }
 
 .desc{
-    margin-top: 15px;
-    font-size: 16px;
-    opacity: 0.9;
+    font-size:20px;
+    line-height:1.8;
+    color:#d8d8d8;
+    max-width:600px;
 }
 
 .button{
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 20px;
-    background: white;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+    display:inline-block;
+    margin-top:35px;
+    padding:16px 32px;
+    border:2px solid #D4AF37;
+    color:#D4AF37;
+    text-decoration:none;
+    font-weight:600;
+    border-radius:8px;
+    transition:.3s ease;
+}
+
+.button:hover{
+    background:#D4AF37;
+    color:#111;
 }
 
 .gold{
     color:#D4AF37 !important;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .content h1{
+        font-size:48px;
+    }
+
+    .desc{
+        font-size:16px;
+    }
+
+    .small{
+        font-size:14px;
+    }
 }
 
 /* ==========================================
