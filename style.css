@@ -541,17 +541,13 @@ nav a.active::after{
     }
 }
     
-/* ==========================================
-   SERVICES PAGE
-========================================== */
+/* ===================================
+   PREMIUM SERVICES PAGE
+=================================== */
 
 .services-hero{
-    width:100%;
-    min-height:100vh;
-    background-image:url("./CoverService1-v2.png");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+    min-height:75vh;
+    background:url("CoverService1-v2.png") center center/cover no-repeat;
     position:relative;
     display:flex;
     align-items:center;
@@ -560,114 +556,149 @@ nav a.active::after{
 .services-hero .overlay{
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,.55);
+    background:
+    linear-gradient(
+        90deg,
+        rgba(0,0,0,.88) 0%,
+        rgba(0,0,0,.70) 45%,
+        rgba(0,0,0,.15) 100%
+    );
 }
 
 .services-content{
     position:relative;
     z-index:2;
-    width:90%;
-    max-width:1200px;
-    margin:0 auto;
-    color:#fff;
-}
-
-.services-content .small-title{
-    color:#D4AF37;
-    font-size:18px;
-    font-weight:700;
-    letter-spacing:1px;
-}
-
-.services-content h1{
-    font-size:72px;
-    font-weight:800;
-    color:#fff;
-    margin-top:15px;
-    line-height:1;
-}
-
-.services-content p{
-    font-size:18px;
-    line-height:1.8;
-    color:#ddd;
     max-width:700px;
-    margin-bottom:50px;
+    margin-left:8%;
+    color:white;
 }
 
-.gold-line{
-    width:240px;
-    height:2px;
-    background:#D4AF37;
-    margin:35px 0;
-}
-
-/* Service Cards */
-
-.service-cards{
-    display:flex;
-    gap:30px;
-    flex-wrap:wrap;
-}
-
-.service-card{
-    width:300px;
-    min-height:320px;
-    padding:35px;
-    border:1px solid rgba(255,255,255,.15);
-    background:rgba(255,255,255,.05);
-    backdrop-filter:blur(10px);
-    border-radius:20px;
-}
-
-.service-card h3{
-    font-size:24px;
-    color:#fff;
-    margin-bottom:15px;
-}
-
-.card-line{
-    width:50px;
-    height:2px;
-    background:#D4AF37;
+.section-tag{
+    display:block;
+    color:#D4AF37;
+    font-size:20px;
+    font-weight:700;
+    letter-spacing:4px;
     margin-bottom:25px;
 }
 
-.service-card ul{
-    list-style:none;
+.services-content h1{
+    font-size:95px;
+    line-height:.95;
+    font-weight:800;
+    margin-bottom:25px;
+    text-transform:uppercase;
 }
 
-.service-card ul li{
-    position:relative;
-    padding-left:22px;
-    margin-bottom:16px;
-    color:#ddd;
-    font-size:16px;
-}
-
-.service-card ul li::before{
-    content:"▸";
-    position:absolute;
-    left:0;
+.services-content h1 span{
     color:#D4AF37;
 }
 
-@media(max-width:991px){
-    .services-content h1{
-        font-size:56px;
+.hero-line{
+    width:220px;
+    height:3px;
+    background:#D4AF37;
+    margin-bottom:35px;
+}
+
+.hero-text{
+    max-width:620px;
+    font-size:20px;
+    line-height:1.9;
+    color:#d5d5d5;
+}
+
+/* SERVICES SECTION */
+
+.services-grid{
+    background:#0f0f0f;
+    padding:90px 8%;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:40px;
+}
+
+.service-box{
+    border-left:1px solid rgba(212,175,55,.25);
+    padding-left:35px;
+}
+
+.service-icon{
+    width:70px;
+    height:70px;
+    border:1px solid #D4AF37;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#D4AF37;
+    font-size:30px;
+    margin-bottom:25px;
+}
+
+.service-box h3{
+    color:white;
+    font-size:32px;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.service-box ul{
+    list-style:none;
+}
+
+.service-box li{
+    color:#cfcfcf;
+    margin-bottom:18px;
+    font-size:18px;
+    position:relative;
+    padding-left:18px;
+}
+
+.service-box li::before{
+    content:"›";
+    color:#D4AF37;
+    position:absolute;
+    left:0;
+}
+
+.service-box:hover{
+    transform:translateY(-5px);
+    transition:.3s;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#0a0a0a;
+    border-top:1px solid rgba(212,175,55,.15);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+    .services-grid{
+        grid-template-columns:repeat(2,1fr);
     }
 
-    .service-cards{
-        justify-content:center;
+    .services-content h1{
+        font-size:72px;
     }
 }
 
 @media(max-width:768px){
+
     .services-content h1{
-        font-size:42px;
+        font-size:50px;
     }
 
-    .service-card{
-        width:100%;
+    .hero-text{
+        font-size:16px;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+        gap:60px;
     }
 }
