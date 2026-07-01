@@ -52,17 +52,14 @@ nav a:hover{
 
 /* HERO SECTION */
 .hero{
-    min-height:100vh;
+    height:100vh;
     width:100%;
-    background-image:url("Cover1.png");
+    background:url("Cover1.png") no-repeat center center;
     background-size:cover;
-    background-position:center center;
-    background-repeat:no-repeat;
     position:relative;
     display:flex;
     align-items:center;
     padding:0 8%;
-    overflow:hidden;
 }
 
 .overlay{
