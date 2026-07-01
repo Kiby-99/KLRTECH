@@ -491,10 +491,11 @@ nav a.active::after{
 }
 
 .contact-left h1{
-
     font-size:54px;
-
 }
+
+} /* closes .contact-left h1 */
+} /* closes @media(max-width:991px) */
 
 /* GLOBAL FOOTER */
 
@@ -546,8 +547,12 @@ nav a.active::after{
 =================================== */
 
 .services-hero{
-    min-height:75vh;
-    background:url("CoverService1-v2.png") center center/cover no-repeat;
+    width:100%;
+    min-height:100vh;
+    background-image:url("CoverService1-v2.png");
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
     position:relative;
     display:flex;
     align-items:center;
